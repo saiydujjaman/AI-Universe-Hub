@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-6</title>
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body onload="allData(6)">
+    
+<!-- main header -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center my-4">
+                <h2>AI Universe Hub</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- short by date -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center mb-3">
+                <button class="btn btn-danger" id="sort-date" >Sort By Date</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- card section -->
+<section>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="card-container">
+            <!-- create card by jascript -->
+        </div>
+    </div>
+</section>
+
+<!-- show more button -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center my-3">
+                <button class="btn btn-danger d-none" id="show-more">Show more</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- modal container -->
+<div class="modal container-fluid " tabindex="-1" id="card-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog " >
+    </div>
+    <div class="modal-content container" id="modal">
+
+    </div>
+  </div>
+<!-- loader/spinner -->
+<div class="d-flex justify-content-center align-items-center" style="margin-top: 150px;">
+
+    <div class="spinner-grow text-warning spinner "  id="loader" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+</div>
+ 
+
+
+
+    <!-- script file link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/e52bf01722.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
